@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <bean id="r1" class="model.Room">
+          <property name="roomNumber" value="101"></property>
+		<property name="bedType" value="queen"></property>
+		<property name="smoking" value="s"></property>
+		<property name="roomRate" value="100"></property>
+    </bean>
+    <bean id="r2" class="model.Room">
+          <property name="roomNumber" value="102"></property>
+		<property name="bedType" value="king"></property>
+		<property name="smoking" value="n"></property>
+		<property name="roomRate" value="1000"></property>
+    </bean>
+    
+    <bean id="r3" class="model.Room">
+          <property name="roomNumber" value="103"></property>
+		<property name="bedType" value="queen"></property>
+		<property name="smoking" value="n"></property>
+		<property name="roomRate" value="200"></property>
+    </bean>
+    
+    
+    
+    
+    <bean id="hotel" class="model.Hotel">
+    <property name="name"><value>TajPalace</value></property>
+     <property name="location"><value>NJ</value></property>
+     <property name="room">
+			<list>
+				<ref bean="r1" />
+				<ref bean="r2" />
+				<ref bean="r3" />
+			</list>
+      </property>
+    
+    
+    
+    </bean>
+    
+    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+</beans>
